@@ -36,7 +36,7 @@ const AuthorCard = ({
       <CardTitle tag="h5">{first_name} {last_name}</CardTitle>
       <CardText>Email: {email}</CardText>
       <div>
-        {(favorite === true) ? <Input type="checkbox" checked /> : <Input type="checkbox" />}
+        {(favorite === true) ? <Input type="checkbox" defaultChecked /> : <Input type="checkbox" />}
         <Label check>Favorite</Label>
       </div>
       <Button color='danger' onClick={() => handleClick('delete')}>Delete Author</Button>
